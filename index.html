@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden; scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="Untitled design.jpg">
+    <title>Mahabhali's Portfolio</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Add custom CSS for styling -->
+    <style>
+        /* Customize your styles here */
+        body {
+            background-color: #ffffff;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+            overflow-x: hidden;       
+          }
+        .scroll-down-animation-active{
+          opacity:0;
+          transform:translateY(-20px);
+          transition: opacity 0.5s , transform 0.5s;
+        }
+        .navbar-nav.nav-item.nav-link:hover{ color: #dd1111;  }
+        .jumbotron {
+           
+            background-size: cover;
+            color: rgb(255, 255, 255);
+           
+            padding-right: 6%;
+            height: 600px;
+        }
+        .nav-link{
+            color: black;
+            padding: 20px 0px;
+            margin: 0px 14px;
+            margin-right: 5%;
+        }
+
+        .jumbotron img {
+            max-width: 100%;
+            height: 480px;
+        }
+        @media screen and (max-width:480px){
+          .profile-picture {
+         width: 380px; 
+         height: 200px;
+        }
+        }
+        .container {
+            margin-top: 30px;
+           
+        }
+
+        .profile-picture {
+         width: 380px; 
+         height: 300px;
+        }
+        li:hover a{
+            color: #dd1111;
+            
+        }
+        .nav-link {
+  
+  font-size: 17px;
+  font-weight: 500;
+  color: #000000;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+ 
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+.section-line {
+      border-top: 4px solid red;
+      width: 170px;
+      
+    }
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #df1c33;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+.intro{
+padding-left: 2rem;
+}
+.btn{
+  width: 10rem;
+  height: 2.7rem;
+  border-radius: 17px;
+  background-color: #f06d15;
+  color: #ffffff;
+  text-align: center;
+  font-weight:500;
+}
+.btn:hover{
+  background-color: #df391c;
+  color: #ffffff;
+}
+.u{
+  padding-top: 2rem;
+}
+.multicolor-text {
+            text-align: center;
+           
+            background: linear-gradient(to right,
+                
+                
+                    rgb(20, 94, 126),
+                    green,
+                
+                    rgb(227, 132, 8),
+                    red);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      
+        <div>
+    <nav class="navbar navbar-expand-lg  " style="position: fixed; width: 100%;  z-index: 1; background-color: rgb(255, 255, 255);">
+      
+        <img src="umbrella.png" width="90" height="70"  alt="" style="align-items: end;">
+      
+        <a class="navbar-brand multicolor-text" href="#" style=" font-weight: 660;">
+           
+        Mahabhali
+        </a>
+      
+      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "  ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-link-ltr"  href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-ltr"   href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-ltr"    href="#festival">Festival</a>
+           
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-ltr"  href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav></div>
+  </header>
+
+
+<!-- Jumbotron (Hero Section) -->
+<section id="home">
+<div class="jumbotron" style="background-color: #fbf6e4; ">
+    <div class="container ">
+        <div class="row mt-md-5 pt-5">
+            <div class="col-md-5 pt-md-5 mt-md-3  intro " style="color: rgb(238, 83, 5);">
+                <h1>Welcome to Mahabhali's Portfolio</h1>
+                <p style="color: black; font-weight: 490;">The underworld King ! A ruler of unparalleled might and boundless love, whose reign was marked by both strength and compassion. Visits Kerala every year on the day of Thiruvonam.</p>
+                <a href="#contact"><button class="btn text-center mt-md-3 ml-md-5">Get In Touch</button></a>
+              </div>
+           <!-- <div class="col-md-1 pt-5 col-2 " style="height: 90px;">
+                <img src="flower-removebg-preview.png" style="width:250px; height:80px ;">
+                <img src="flower-removebg-preview.png" style="margin-top:9rem; margin-left: 4rem;width:250px; height:80px ;">
+            </div>-->
+          
+            <div class="col-md-7 col-9 mx-auto  ">
+                <img src="mavdup-removebg-preview (1).png" alt="Mahabhali's Picture" class="profile-picture ml-md-5 pl-md-5">
+            </div>
+            <!--<div class="col-md-1 pt-5 col-2" style="height: 80px; margin-top: 15%; height: 90px;">
+                <img src="flower-removebg-preview.png" style="width:250px; height:90px ;">
+            </div>-->
+        </div>
+    </div>
+</div>
+</section>
+<section id="about">
+<div class="row justify-content-center pt-5 pt-md-0">
+  <div class="row row-cols-1 row-cols-md-3   pt-5 pt-md-0  mr-5 mr-md-0" style="color: rgb(238, 83, 5); margin-top: 3rem;">
+    <h2 class="p-3 pt-5 pt-md-0" >BIOGRAPHY</h2>
+  </div>
+  </div>
+  <div class="container">
+  <div class="  col-md-12 p-1">
+  <p>While Mahabali is a legendary and mythological figure from Hindu mythology and folklore, specific biographical details in the traditional sense, such as birthplace, birthdate, and family lineage, may not be available. Mahabali's story is primarily told through ancient texts and oral traditions, and it is more of a symbolic and allegorical narrative.
+  In Hindu mythology, Mahabali is celebrated for his virtues, his rule as the king of Kerala, his generosity, and his encounter with Lord Vishnu in the Vamana avatar. His biography is often explored through these aspects of his character and the stories associated with him, rather than conventional biographical details.
+  .</p>
+  </div>
+  </div>
+  
+  <div class="row justify-content-center " style="color: rgb(238, 83, 5);">
+    <h2 class=" p-4" >QUALITIES</h2>
+  </div>
+      <div class="row row-cols-1 row-cols-md-3 p-4">
+          <div class="col mb-4">
+  
+            <div class="card h-100 border-warning shadow p-3 mb-5 bg-white rounded ">
+              <img src="maveli_mahabali_png_image_by_anulubi_dd4pwbk-pre.png"  height="360px" width="200px" class="card-img-top" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Benevolant King</h5>
+                <p class="card-text">Mahabali is described in early Hindu texts as a benevolent and generous king. He ruled without discrimination, and his people were honest, healthy, and happy under his rule.[8] Mahabali also temporarily possessed the amrita (nectar of eternal life) obtained by the asuras.</p>
+                <a href="https://en.wikipedia.org/wiki/Mahabali">know more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100 border-warning shadow p-3 mb-5 bg-white rounded">
+              <img src="kimpMahabaliVarmajpg.jpg" height="300px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">BOON</h5>
+                <p class="card-text">According to Hindu mythology, Vishnu granted Bali a boon whereby he could return back to his homeland once every year. The harvest festivals of Balipratipada and Onam are celebrated to mark his yearly homecoming.[2][6][13] Literature and inscriptions in Hindu temples suggest that these festivals, featuring colourful decorations, lighted lamps, gift giving, feasts and community events </p>
+                <a href="https://en.wikipedia.org/wiki/Onam">know more</a> 
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100 border-warning shadow p-3 mb-5 bg-white rounded">
+              <img src="Untitled23.jpg" HEIGHT="300PX" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">POSSESED AMRITA</h5>
+                <p class="card-text"> Mahabali also temporarily possessed the amrita (nectar of eternal life) obtained by the asuras.[9] The amrita allowed his subjects to bring him back to life after his death in one of the wars between suras (devas) and asuras.[10][9] Mahabali was, thus, immune from death. After many wars, the invincible Bali had conquered heaven and earth. The suras (devas) approached Vishnu to save them from complete obliteration.</p>
+                <a href="https://en.wikipedia.org/wiki/Onam">know more</a>  </div>
+            </div>
+          </div>
+          
+            </div>
+          </div>
+        </section>
+
+        <section id="festival">
+          <div class="row justify-content-center">
+            <div class="row row-cols-1 row-cols-md-3 p-4" style="color: rgb(238, 83, 5);">
+              <h1 class="p-2">ONAM</h1>
+            </div>
+            </div>
+          
+            <div class="container">
+              <div class="row">
+              <div class="  col-md-6 p-1">
+              <p>Onam is the most popular festival in the state of Kerala, India. Onam is the official state festival of Kerala. It is celebrated with joy and enthusiasm all over the state by Malayalees regardless of religion, caste or creed.
+              .</p><a href="https://en.wikipedia.org/wiki/Onam">know more</a></div>
+              <div class="col-md-6 p-8">
+                <img src="namaste.jpg" width=400px height=250px class="p-12" >
+              
+              </div>
+            </div>
+             
+              </div>
+      
+  
+          <div class="row justify-content-center " style="color: rgb(238, 83, 5);">
+            <h2 class="p-4">ONAM SPECIAL </h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 p-4">
+              <div class="col mb-4">
+      
+                <div class="card h-100 border-warning shadow p-3 mb-5 bg-white rounded ">
+                  <img src="images1.jpg"  height="400px" class="card-img-top" alt="...">
+                  <div class="card-body ">
+                    <h5 class="card-title">POOKALAM</h5>
+                    <p class="card-text">Talking of all the activities, one such activity that interests people of every age group is Onam Pookalam which literally means Onam flower rangolis or the patterns made with flower petals. Usually, the Onam Pookalam is made round in shape and then filled with intricate detailing with colourful flower petals..</p>
+                    <a href="https://www.floweraura.com/blog/about-onam-pookalam-and-the-flowers-used-for-it">know more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card h-100 border-warning shadow p-3 mb-5 bg-white rounded">
+                  <img src="Untitled.jpg" height="400px" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">ONAM SADYA</h5>
+                    <p class="card-text">The Onam sadya (feast) is another indispensable part of Onam,[42] and almost every Keralite either makes or attends one. The Onasadya reflects the spirit of the season and is traditionally made with seasonal vegetables such as but may include over two dozen dishes, including (but not limited to): </p>
+                    <a href="https://timesofindia.indiatimes.com/life-style/food-news/onam-sadhya-the-26-dishes-spread-and-the-interesting-meal-customs/articleshow/85487625.cms">know more</a> </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card h-100 border-warning shadow p-3 mb-5 bg-white rounded">
+                  <img src="123.jpg" height="400px" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">MUSIC AND DANCE</h5>
+                    <p class="card-text">Traditional dance forms including Thiruvathira, Kummattikali, Pulikali, Thumbi Thullal, Onam Kali and others. Thiruvathira Kali is a women's dance performed in a circle around a lamp. Kummattikali is a colorful-mask dance. In Thrissur, festivities include a procession consisting of caparisoned elephants surrounded by Kummatikali dancers.</p>
+                    <a href="https://en.wikipedia.org/wiki/Onam">know more</a> </div></div>
+                </div>
+              </div>
+            
+           
+              </div>
+            </div>
+          </section>
+            
+  <!-- Rotating card -->
+           <section id="contact">
+            <div class="row justify-content-center" style="color: rgb(238, 83, 5);" >
+              <h1>Reach me out </h1>
+              </div>
+              <div class="container">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">First Name</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Last Name</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div>
+                  
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Message</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="your message">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">Age</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              </div>
+         <footer >
+         
+          <div class="container  " >
+            <div class="row" >
+              <div class="col-md-12 text-center " >
+         
+            <a href="https://www.facebook.com/">    <i class="fa fa-facebook" style="color: #ed5003;"></i></a>
+            <a href="https://www.instagram.com/">   <i class="fa fa-instagram" style="color: #ea5800;"></i></a>
+          <a href="https://twitter.com/"> <i class="fa fa-twitter" style="color: #fa5e12;"></i></a>
+              
+            <div class="wow">    <p>copyright@maveli</p>      </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+            <script>
+              $(document).ready(function () {
+                  $(window).scroll(function () {
+                      $('.wow').each(function () {
+                          var top_of_element = $(this).offset().top;
+                          var bottom_of_element = top_of_element + $(this).outerHeight();
+                          var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+              
+                          if (bottom_of_screen > top_of_element) {
+                              $(this).addClass('scroll-down-animation-active');
+                          } else {
+                              $(this).removeClass('scroll-down-animation-active');
+                          }
+                      });
+                  });
+              });
+              </script>
+          
+
+<!-- Contact Section 
+<div class="container" id="contact">
+    <h2>Contact</h2>
+    <p>Contact information and a contact form can be placed here.</p>
+</div>-->
+
+<!-- Add Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
